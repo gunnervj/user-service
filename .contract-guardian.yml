@@ -1,0 +1,22 @@
+version: "1"
+
+sources:
+  rest:
+    paths:
+      - "docs/**/*.yaml"
+    baseline: branch:main
+
+rules:
+  rest:
+    breaking:
+      - endpoint-removed
+      - required-param-added
+      - response-field-removed
+      - response-field-type-changed
+      - status-code-removed
+    warning:
+      - response-field-deprecated
+      - parameter-renamed
+
+gate:
+  block-on: breaking
