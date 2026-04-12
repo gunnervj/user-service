@@ -29,7 +29,12 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
+	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
     <dependencies>
         <dependency>
             <groupId>io.quarkus</groupId>
@@ -67,6 +72,11 @@
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-smallrye-openapi</artifactId>
         </dependency>
+        <dependency>
+	        <groupId>com.github.nexoforge</groupId>
+	        <artifactId>contract-guardian</artifactId>
+	        <version>master-SNAPSHOT</version>
+	    </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-junit</artifactId>
@@ -128,7 +138,7 @@
             <plugin>
                 <groupId>com.github.nexoforge</groupId>               
                 <artifactId>contract-guardian-maven-plugin</artifactId>
-                <version>v0.1.0</version>
+                <version>master-SNAPSHOT</version>
                 <executions>
                     <execution>
                         <id>generate-openapi-spec</id>
