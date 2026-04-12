@@ -131,6 +131,7 @@
                             <goal>generate-spec</goal>
                         </goals>
                         <configuration>
+                            <diff>HEAD</diff>
                             <framework>JAX_RS</framework>
                             <packagesToScan>
                                 <package>com.personalfinance.userservice.resource</package>
