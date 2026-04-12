@@ -73,7 +73,12 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
+    <pluginRepositories>
+        <pluginRepository>                                                                                                                           
+        <id>jitpack.io</id>                                                                                                                        
+        <url>https://jitpack.io</url>
+        </pluginRepository>                                                                                                                          
+    </pluginRepositories>   
     <build>
         <plugins>
             <plugin>
@@ -121,9 +126,9 @@
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>io.contractguardian</groupId>
+                <groupId>io.nexoforge</groupId>  
                 <artifactId>contract-guardian-maven-plugin</artifactId>
-                <version>0.1.0-SNAPSHOT</version>
+                <version>v0.1.0</version>
                 <executions>
                     <execution>
                         <id>generate-openapi-spec</id>
